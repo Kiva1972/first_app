@@ -4,6 +4,14 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 # Add bootstrap for pretty UI
 gem 'bootstrap-sass'
+# Use sqlite3 as the database for Active Record
+group :production do
+	gem 'pg'
+end
+
+group :development do
+	gem 'sqlite3'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
